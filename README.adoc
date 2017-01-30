@@ -1,0 +1,9 @@
+== README
+
+This project objective is to investigate the use of the Grails camunda plugin in a shared container.
+
+The official grails-camunda-plugin src was modified to fix an issue with the 'embedded' mode where the configuration key
+can be set as a flat String using dot notation or a hierarchical structure as used by YAML configurations.
+
+To deploy in a shared container it is important that only the correct jar files are in the webapp LIB directory.
+In this case,for Grails, the camunda-engine-spring.jar is the relevant jar.
